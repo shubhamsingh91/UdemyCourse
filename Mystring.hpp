@@ -23,8 +23,8 @@ public:
 
     // - operator unary operator
     Mystring operator-() const; // make lowercase version
-    Mystring operator+(const Mystring &rhs) const;
-    bool operator==(const Mystring &rhs) const;
+    Mystring operator+(const Mystring &rhs) const; // concatenate strings here
+    bool operator==(const Mystring &rhs) const; // 
 
 };  
 
