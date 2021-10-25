@@ -1,6 +1,7 @@
 #include<vector>
 #include "Account.h"
 #include "Saving_account.h"
+#include "Trust_account.h"
 
 // Helper functions for Account
 
@@ -79,6 +80,18 @@ void withdraw(std::vector<Saving_Acc> &accounts, double amt)
 
 
 
+// Helper functions for Trust's accounts
 
 
+void display(std::vector<Trust_Acc> &trust_acc)
+{
+    std::cout << "----------------------------- -----------------" << std::endl;
+    std::cout << "-------------Trust Accounts Details ----------" << std::endl;
+    for (auto const &trust_acc : trust_acc)
+    {
+        std::cout << "["<< trust_acc.get_name() << " , Balance: " << trust_acc.get_balance() << " , Int. Rate: "<<
+            trust_acc.get_rate()<< "]"<<std::endl;
+    }
+    std::cout << "----------------------------- -----------------" << std::endl;
 
+}
