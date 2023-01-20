@@ -61,7 +61,8 @@
         "typeindex": "cpp",
         "tensor": "cpp",
         "condition_variable": "cpp",
-        "mutex": "cpp"
+        "mutex": "cpp",
+        "bit": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
