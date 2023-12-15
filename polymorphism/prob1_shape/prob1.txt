@@ -1,0 +1,20 @@
+
+Problem: Implement a class hierarchy for 2D geometric shapes with a twist.
+
+Description:
+
+Create a class hierarchy for 2D geometric shapes, including a base class Shape and derived classes for different types of shapes (e.g., Circle, Rectangle, Triangle). Each shape should have a method to calculate its area and perimeter. However, to make the problem more challenging, some shapes will have a special property that modifies their area or perimeter calculations.
+
+Requirements:
+
+Implement a Shape base class with pure virtual methods for getArea() and getPerimeter().
+
+Implement a Circle derived class with a radius attribute. The Circle class should override the getArea() and getPerimeter() methods to calculate the area and perimeter of the circle. Add a boolean attribute doubledRadius to the Circle class, which, if set to true, doubles the radius for area and perimeter calculations.
+
+Implement a Rectangle derived class with width and height attributes. The Rectangle class should override the getArea() and getPerimeter() methods to calculate the area and perimeter of the rectangle. Add a boolean attribute halfHeight to the Rectangle class, which, if set to true, halves the height for area and perimeter calculations.
+
+Implement a Triangle derived class with base and height attributes for a right-angled triangle. The Triangle class should override the getArea() and getPerimeter() methods to calculate the area and perimeter of the triangle. Add a boolean attribute doubleBase to the Triangle class, which, if set to true, doubles the base for area and perimeter calculations.
+
+In the main() function, create objects of each derived class with and without the special properties. Test the area and perimeter calculations for each object and output the results.
+
+Use appropriate access specifiers (public, protected, private) for member variables and functions.

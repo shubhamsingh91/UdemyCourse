@@ -1,0 +1,3 @@
+/home/shubham/Desktop/udemy practice/gtest/CMakeFiles/rebuild_cache.dir
+/home/shubham/Desktop/udemy practice/gtest/CMakeFiles/edit_cache.dir
+/home/shubham/Desktop/udemy practice/gtest/CMakeFiles/runTests.dir

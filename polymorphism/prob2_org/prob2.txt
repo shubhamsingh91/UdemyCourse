@@ -1,0 +1,25 @@
+Problem Statement:
+Design and implement a set of classes using multiple inheritance in C++ to model a system for an organization that manages employees and projects. The organization has employees who can have different roles such as Manager, Developer, and Designer. Employees can be part of multiple projects.
+
+Implement the following classes:
+
+Employee: A base class representing an employee with basic information like name, employee ID, and age.
+
+Manager, Developer, and Designer: Derived classes representing different roles for employees. Each role class should inherit from Employee and add its own specific attributes and methods. For example, a Manager can have a list of employees under their supervision, a Developer can have a programming language specialization, and a Designer can have a design tool expertise.
+
+Project: A class representing a project with attributes like project name, project ID, start date, and end date. A project can have multiple employees working on it.
+
+RoleInProject: A class representing the role of an employee in a specific project. This class should be inherited by multiple role-specific classes such as ProjectManager, ProjectDeveloper, and ProjectDesigner. Each of these classes should inherit from both the corresponding role class (e.g., Manager, Developer, Designer) and the RoleInProject class.
+
+Implement methods to add or remove employees to a project, assign roles to employees within a project, and list all employees working on a project.
+
+Note:
+
+Use proper object-oriented design principles, such as encapsulation, inheritance, and polymorphism.
+Ensure that multiple inheritance is used effectively and avoid issues like the diamond problem by using virtual inheritance if necessary.
+Test Cases:
+Create employees with different roles (e.g., Manager, Developer, Designer).
+Create a project and add employees to the project with specific roles (e.g., ProjectManager, ProjectDeveloper, ProjectDesigner).
+List all employees working on a project.
+Remove an employee from a project and verify the updated list of employees in the project.
+Assign a new role to an employee within a project and verify their updated role.

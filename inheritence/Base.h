@@ -8,18 +8,23 @@
 class Base {
 
   // private
-private:
+public:
   int num2;
   int num1;
   std::string name;
 
-  // protected:
-  // public
+ protected:
+    int num3;
+
+ private:
+    int num4;   
+
 public:
   Base();                        // constructor-1
   Base(int z);                   // constructor-2
   Base(int y, int z);            // constructor-3
-  Base(const Base &obj);         // copy constructor
+  Base(int y, int z, std::string name);            // constructor-4
+  //Base(const Base &obj);         // copy constructor
   double squared_fun(double &x); // returns the square of a double
   ~Base();                       // destructor
 
@@ -43,9 +48,13 @@ Base::Base(int y, int z) : num1(y), num2(z), name("No-Name") {
   std::cout << "Base 2 arg constructor" << std::endl;
 }
 
-Base::Base(const Base &obj) : num2{obj.num2}, num1{obj.num1}, name{obj.name} {
-  std::cout << "Base copy constructor" << std::endl;
+Base::Base(int y, int z, std::string name) : num1(y), num2(z), name(name) {
+  std::cout << "Base 3 arg constructor" << std::endl;
 }
+
+// Base::Base(const Base &obj) : num2{obj.num2}, num1{obj.num1}, name{obj.name} {
+//   std::cout << "Base copy constructor" << std::endl;
+// }
 
 void Base::set_num(int z) { num1 = z; }
 

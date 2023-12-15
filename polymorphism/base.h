@@ -15,17 +15,16 @@ private:
 
 public:
   Base();
-  virtual void display(); // dynamically binded now due to the virtual keyword
-  virtual void fun() override;
-  virtual void
-  say_hello() override; // dynamically binded now due to the virtual keyword
+  void display() { cout << "displaying base class!" << endl; } //
+  void fun(); // dynamically binded since virtual in base abstract class
+  void say_hello() {
+    cout << "Hello in base!" << endl;
+  }; // dynamically binded since virtual in base abstract class
 
-  virtual ~Base(); // virtual destructor
+  ~Base(); // virtual destructor
 };
 Base::Base() {}
 
-void Base::display() { cout << "displaying base class!" << endl; }
-void Base::say_hello() { cout << "Hello in base!" << endl; }
 void Base::fun() { cout << "fun in Base class!" << endl; }
 Base::~Base() { cout << "Base destructor" << endl; }
 

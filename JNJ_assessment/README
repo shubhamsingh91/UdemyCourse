@@ -1,0 +1,61 @@
+# Your Project
+
+This is a C++ project for the JNJ Assessment.
+Author- Shubham Singh
+contact- singh281@utexas.edu
+
+## Building the Project
+
+### Prerequisites
+
+- CMake (version 2.6 or higher)
+- C++ Compiler (supporting C++11 standard)
+- [Optional] Google Test (if building the tests)
+
+### Build Instructions
+
+Follow these steps to build the project:
+
+1. Clone the repository or download the source code.
+2. Open a terminal or command prompt and navigate to the project directory.
+
+#### Building the Main Project
+
+To build the main project, run the following commands:
+
+```shell
+mkdir build
+cd build
+cmake ..
+make
+```
+This will create an executable named main in the build directory.
+
+####  Building the Tests (Optional)
+To build the tests, ensure you have the Google Test framework installed.
+
+Download and install Google Test by following the instructions provided in their documentation: [https://github.com/google/googletest/blob/main/googletest/README.md].
+
+Once Google Test is installed, enable the build of the tests by running the following commands:
+
+```shell
+mkdir build
+cd build
+cmake -DBUILD_TESTS=ON ..
+make
+```
+This will create an executable named runTests in the build directory.
+
+#### Running the Project
+To run the main project, navigate to the build directory and execute the main executable:
+
+```shell
+cd build
+./main
+```
+To run the tests (if built), navigate to the build directory and execute the runTests executable:
+
+```shell
+cd build
+./runTests
+```
