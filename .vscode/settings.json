@@ -108,7 +108,12 @@
         "boundingbox": "cpp",
         "boundingsphere": "cpp",
         "camera": "cpp",
-        "cassert": "cpp"
+        "cassert": "cpp",
+        "unordered_set": "cpp",
+        "state": "cpp",
+        "valueobject": "cpp",
+        "observer_ptr": "cpp",
+        "ref_ptr": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

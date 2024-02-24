@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <iostream>
 #include <string>
+#include <vector>
+#include <chrono>
 
 using namespace std;
 
@@ -26,7 +28,10 @@ public:
 class Apple : public Fruit{
 
  public:
- virtual void eat(){cout << "Eating Apple! " << endl;}
+ virtual void eat(){
+    int num1=1;
+    num1+=1;
+ }
 
 };
 
@@ -48,6 +53,24 @@ int main(){
     B->print_name();
     B->eat();
 
+   vector<Fruit *> v1;
+   v1.resize(10000);
+   
+   for (int i=0; i<10000;i++){
+    v1.push_back(new Apple());
+   }
+    
+   auto start_time = std::chrono::high_resolution_clock::now();
+
+   for (auto c: v1){
+  
+    }
+
+    auto end_time = std::chrono::high_resolution_clock::now();
+
+    std::chrono::duration<double, std::milli> fp_ms =  end_time - start_time;
+    
+    std::cout << "duration = " << fp_ms.count() << std::endl;
 
 
 
