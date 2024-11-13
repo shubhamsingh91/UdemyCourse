@@ -2,6 +2,12 @@
 
 using namespace std;
 
+int x = 45;
+
+void fun() {
+  std::cout << "x = " << x << std::endl;
+}
+
 int main(){
   
  const  int n { 5};

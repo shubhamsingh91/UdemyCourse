@@ -7,8 +7,9 @@ using namespace std;
 
 class derived5: public base5{
 
- private:
+ public:
     int num3;
+   int num2;
 
  public:
   derived5(){cout << "derived5 const" << endl;};
@@ -16,13 +17,15 @@ class derived5: public base5{
   
   derived5(int m, int n):base5{m},num3{n}{};
 
-  virtual inline void print_nums(){
+  virtual inline void print_nums(){ // dynamically bound now
     this->base5::print_nums();
     cout << "print_nums in derived5" << endl;
     std::cout << "num3 = " << num3 << std::endl;
   }
 
-  ~derived5(){};
+  virtual int print_num3(){return num3;};
+
+   ~derived5(){};
 
 
 };

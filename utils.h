@@ -12,3 +12,8 @@ template <typename T1, typename T2>
 void print(const T1 &var1, const T2& var2){
   std::cout << var1 << " " << var2 << std::endl;
 }
+
+
+void printline(){
+  std::cout << "------------------------------------------" << std::endl;
+}

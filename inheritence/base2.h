@@ -25,15 +25,17 @@ public:
         num3=b2.num3;
         name=b2.name;
     }
-    base2 (base2&& b2){
-        if
-    }
-    virtual string get_name(){return name;}
+    // base2 (base2&& b2){
+    //     if
+    // }
+    virtual string get_name()  {
+        std::cout << "base get_name-- ";
+        return name;}
     int get_num1(){return num1;};
     int get_num2(){return num2;};
     int get_num3(){return num3;};
    
-    ~base2(){};
+    virtual ~base2(){};
 };
 
 

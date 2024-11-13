@@ -4,6 +4,8 @@
 #include <string>
 #include <vector>
 #include<algorithm>
+#include "../utils.h"
+
 using namespace std;
 
 struct Square_functor{
@@ -70,6 +72,16 @@ int main()
  k(14);
 
  cout << "-----10------" << endl; 
+
+ auto lamb1 = []() -> void{print("lambda1");};
+ lamb1();
+
+ print("------------11-------------");
+ auto lamb2 = [x](int y) {return (x+y);}; // -> and reeturn type are optional
+ 
+ print(lamb2(45));
+
+
 
  return 0;
 }

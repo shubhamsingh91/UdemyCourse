@@ -25,7 +25,9 @@ public:
     name=d2.name;
  }
  int get_num1(){return num1;};
- string get_name(){return name;}
+ virtual string get_name(){
+    std::cout << "derived get_name--- ";
+   return name;}
  int getbase_num2_m(){return base2::num2+69;}
  int getbase_num3_m(){return base2::num3+89;}
  string concate_names(){return name+" "+base2::name;}
