@@ -30,6 +30,7 @@ public:
   int get_num();
   std::string get_name();
   int get_num2();
+  const int& get_num_ref(){return num1;}// return by const ref
 };
 
 Base::Base() : num1(0), num2(0), name("No-Name") {
