@@ -21,8 +21,10 @@ int main() {
   cout << "&t = " << &t << endl;
   cout << "*p1 = " << *p1 << endl;
   cout << "p1 = " << p1 << endl; // gives the address it stores
-  cout << sizeof p1 << endl;
+  cout << sizeof p1 << endl; // size of pointer
 
+  std::cout<< "----------0-------------" << std::endl;
+   
   double *p2{nullptr};
   cout << p2 << endl; // returns 0
   double d1{45.1};

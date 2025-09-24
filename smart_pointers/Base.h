@@ -58,5 +58,5 @@ std::string Base::get_name() { return name; }
 
 double Base::squared_fun(double &x) { return x * x; }
 
-Base::~Base() {}
+Base::~Base() {std::cout << "calling destructor" << std::endl;}
 #endif // _BASE_H_
